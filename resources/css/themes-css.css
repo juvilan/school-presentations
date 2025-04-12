@@ -1,0 +1,58 @@
+/* themes.css */
+/* 밝은 테마 (기본) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #2c3e50;
+  --link-color: #3498db;
+  --accent-color: #e74c3c;
+  --code-bg: #f5f5f5;
+  --border-color: #dddddd;
+  --card-bg: #f9f9f9;
+}
+
+/* 어두운 테마 */
+.dark-theme {
+  --bg-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --heading-color: #3498db;
+  --link-color: #9b59b6;
+  --accent-color: #e74c3c;
+  --code-bg: #34495e;
+  --border-color: #7f8c8d;
+  --card-bg: #34495e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+code, pre {
+  background-color: var(--code-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* 테마 토글 버튼 */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
